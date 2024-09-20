@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Salut !"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="27dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/noteInput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:hint="note 1"
+        android:inputType="number|numberDecimal"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/noteInput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteInput1"
+        android:layout_marginTop="10dp"
+        android:hint="note 2"
+        android:inputType="number|numberDecimal"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/noteInput3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="note 3"
+        android:layout_marginTop="10dp"
+        android:inputType="number|numberDecimal"
+        android:layout_below="@id/noteInput2"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/noteInput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteInput3"
+        android:layout_marginTop="10dp"
+        android:hint="note 4"
+        android:inputType="number|numberDecimal"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:backgroundTint="#686363FF"
+        android:layout_below="@id/noteInput4" />
+
+    <TextView
+        android:id="@+id/moyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteInput4"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="0.0"
+        android:textSize="16sp" />
+
+</RelativeLayout>
